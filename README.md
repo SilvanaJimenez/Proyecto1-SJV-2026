@@ -5,7 +5,7 @@ Aplicacion interactiva desarrollada en Streamlit que integra los conceptos
 fundamentales del Modulo 1: variables, estructuras de datos, control de flujo,
 funciones, programacion funcional y programacion orientada a objetos (POO).
 
-**Estudiante:** Silvana J.
+**Estudiante:** Silvana Melissa Jiménez Vargas
 **Area de aplicacion:** Operaciones / Produccion / TI
 **Año:** 2026
 
@@ -51,6 +51,8 @@ La aplicacion se abrira en `http://localhost:8501`.
 ## Aplicacion publicada
 
 🔗 **Streamlit Cloud:** _(pegar aqui el enlace de la app publicada)_
+
+🔗 **Repositorio:** https://github.com/SilvanaJimenez/Proyecto1-SJV-2026
 
 ---
 
