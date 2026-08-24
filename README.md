@@ -1,65 +1,51 @@
-# Proyecto 1 - Aplicacion en Streamlit
-### Especializacion en Python for Analytics - Modulo 1: Python Fundamentals
+# Proyecto 1 - Aplicación en Streamlit
 
-Aplicacion interactiva desarrollada en Streamlit que integra los conceptos
-fundamentales del Modulo 1: variables, estructuras de datos, control de flujo,
-funciones, programacion funcional y programacion orientada a objetos (POO).
+Especialización en Python for Analytics
+Módulo 1 - Python Fundamentals
 
-**Estudiante:** Silvana Melissa Jiménez Vargas
-**Area de aplicacion:** Operaciones / Produccion / TI
-**Año:** 2026
+Estudiante: Silvana Melissa Jiménez Vargas
+Año: 2026
 
----
+Aplicación interactiva que reúne los temas revisados en el Módulo 1: variables,
+estructuras de datos, control de flujo, funciones y programación orientada a objetos.
 
-## Contenido de la aplicacion
+## Enlaces
 
-| Seccion | Descripcion |
-|---|---|
-| **Home** | Presentacion del proyecto, datos del estudiante y tecnologias usadas |
-| **Ejercicio 1** | Flujo de caja con listas: ingresos, gastos, saldo final y estado del flujo |
-| **Ejercicio 2** | Registro de productos con arrays de NumPy convertidos a DataFrame |
-| **Ejercicio 3** | Uso de funciones de `libreria_funciones_proyecto1.py` (OEE, MTBF/MTTR, disponibilidad) con historico de resultados |
-| **Ejercicio 4** | Uso de la clase `EquipoMantenimiento` de `libreria_clases_proyecto1.py` con CRUD completo |
+- Repositorio: https://github.com/SilvanaJimenez/Proyecto1-SJV-2026
+- Aplicación publicada: https://proyecto1-sjv-2026.streamlit.app
 
----
+## Secciones
 
-## Estructura del repositorio
+La navegación se hace desde el menú lateral con `st.sidebar.selectbox()`.
+
+- **Home**: presentación del proyecto, datos del estudiante y tecnologías utilizadas.
+- **Ejercicio 1**: flujo de caja con listas. Registra movimientos de ingreso y gasto,
+  calcula los totales y el saldo final, e indica si el flujo está a favor o en contra.
+- **Ejercicio 2**: registro de productos en arrays de NumPy, que luego se convierten
+  en un DataFrame de Pandas actualizado en pantalla.
+- **Ejercicio 3**: uso de funciones del archivo `libreria_funciones_proyecto1.py`.
+  Se trabajó con el área de Productividad y Operaciones, con las funciones
+  `calcular_productividad_laboral()` y `calcular_costo_unitario_total()`, y un
+  histórico de resultados.
+- **Ejercicio 4**: uso de la clase `EquipoMantenimiento` del archivo
+  `libreria_clases_proyecto1.py`, con las operaciones CRUD (crear, leer,
+  actualizar y eliminar).
+
+## Archivos
+
+- `app.py` - aplicación principal
+- `libreria_funciones_proyecto1.py` - librería de funciones
+- `libreria_clases_proyecto1.py` - librería de clases
+- `requirements.txt` - dependencias
+- `Python_logo.png` - imagen usada en la sección Home
+
+## Ejecución local
 
 ```
-.
-├── app.py                             # Aplicacion principal
-├── libreria_funciones_proyecto1.py    # Libreria de funciones (provista por el docente)
-├── libreria_clases_proyecto1.py       # Libreria de clases (provista por el docente)
-├── requirements.txt                   # Dependencias
-├── .gitignore
-└── README.md
-```
-
----
-
-## Ejecucion local
-
-```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-La aplicacion se abrira en `http://localhost:8501`.
+## Tecnologías
 
----
-
-## Aplicacion publicada
-
-🔗 **Streamlit Cloud:** _(pegar aqui el enlace de la app publicada)_
-
-🔗 **Repositorio:** https://github.com/SilvanaJimenez/Proyecto1-SJV-2026
-
----
-
-## Tecnologias utilizadas
-
-- Python 3
-- Streamlit
-- Pandas
-- NumPy
-- GitHub / Streamlit Community Cloud
+Python 3, Streamlit, Pandas, NumPy, GitHub y Streamlit Cloud.
