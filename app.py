@@ -312,7 +312,8 @@ elif seccion == "Ejercicio 3":
     if len(st.session_state.historico_funciones) == 0:
         st.info("Todavía no se ha ejecutado ninguna función.")
     else:
-        st.dataframe(pd.DataFrame(st.session_state.historico_funciones), use_container_width=True)
+        df_historico = pd.DataFrame(st.session_state.historico_funciones)
+        st.dataframe(df_historico.fillna("-"), use_container_width=True)
 
         if st.button("Limpiar histórico"):
             st.session_state.historico_funciones = []
