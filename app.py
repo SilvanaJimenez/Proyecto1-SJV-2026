@@ -1,6 +1,3 @@
-# Proyecto 1 - Aplicación en Streamlit
-# Especialización en Python for Analytics - Módulo 1: Python Fundamentals
-# Para ejecutar: streamlit run app.py
 
 import os
 
@@ -12,7 +9,7 @@ import libreria_funciones_proyecto1 as lf
 import libreria_clases_proyecto1 as lc
 
 
-# Datos del estudiante
+# DATOS DE PANTALLA PRINCIPAL
 NOMBRE_ESTUDIANTE = "Silvana Melissa Jiménez Vargas"
 MODULO = "Módulo 1 - Python Fundamentals"
 CURSO = "Especialización en Python for Analytics"
@@ -24,7 +21,7 @@ LOGO = "Python_logo.png"
 st.set_page_config(page_title="Proyecto 1 - Python Fundamentals", layout="wide")
 
 
-# Inicialización de las variables que deben conservarse entre recargas
+# VARIABLES
 if "movimientos" not in st.session_state:
     st.session_state.movimientos = []
 
@@ -41,7 +38,7 @@ if "equipos" not in st.session_state:
     st.session_state.equipos = []
 
 
-# Menú lateral
+# MENU LATERAL
 st.sidebar.title("Proyecto 1")
 st.sidebar.write(NOMBRE_ESTUDIANTE)
 
@@ -51,9 +48,8 @@ seccion = st.sidebar.selectbox(
 )
 
 
-# ---------------------------------------------------------------
 # HOME
-# ---------------------------------------------------------------
+
 if seccion == "Home":
 
     st.title("Proyecto Aplicado en Streamlit")
@@ -99,9 +95,8 @@ if seccion == "Home":
     )
 
 
-# ---------------------------------------------------------------
 # EJERCICIO 1 - Flujo de caja con listas
-# ---------------------------------------------------------------
+
 elif seccion == "Ejercicio 1":
 
     st.title("Ejercicio 1 - Flujo de caja con listas")
@@ -167,9 +162,8 @@ elif seccion == "Ejercicio 1":
             st.warning("Los ingresos son iguales a los gastos.")
 
 
-# ---------------------------------------------------------------
 # EJERCICIO 2 - Registro con NumPy y DataFrame
-# ---------------------------------------------------------------
+
 elif seccion == "Ejercicio 2":
 
     st.title("Ejercicio 2 - Registro con NumPy, arrays y DataFrame")
@@ -239,9 +233,8 @@ elif seccion == "Ejercicio 2":
         col3.metric("Precio promedio", f"S/ {np.mean(st.session_state.arr_precio):,.2f}")
 
 
-# ---------------------------------------------------------------
 # EJERCICIO 3 - Funciones desde una librería externa
-# ---------------------------------------------------------------
+
 elif seccion == "Ejercicio 3":
 
     st.title("Ejercicio 3 - Uso de funciones desde una librería externa")
@@ -319,9 +312,8 @@ elif seccion == "Ejercicio 3":
             st.session_state.historico_funciones = []
 
 
-# ---------------------------------------------------------------
 # EJERCICIO 4 - Clase con CRUD
-# ---------------------------------------------------------------
+
 elif seccion == "Ejercicio 4":
 
     st.title("Ejercicio 4 - Clase EquipoMantenimiento con CRUD")
